@@ -1,0 +1,68 @@
+//banner
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-size: $section-title;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px;
+        padding: 0;
+        color: $color-white;
+
+        &--subtitle {
+            font-size: $subheading-text;
+            color: $color-text;
+            margin: 30px 10px;
+        }
+
+        &--subtitle-brand {
+            font-size: 24px;
+            color: $color-brand;
+            font-weight: 900;
+        }
+    }
+
+    &__logo {
+        font-size: $section-title;
+        font-weight: 900;
+        border: 4px solid $color-white;
+        text-align: center;
+        font-weight: 900 !important;
+        margin: 0;
+        padding: 0 15px;
+        color: $color-white;
+    }
+
+    &__title--bold {
+        font-size: $banner-title;
+        color: $color-brand;
+        font-weight: 900 !important;
+        position: relative;
+        text-transform: uppercase;
+
+    }
+
+    &__title--bold-sec {
+        font-size: $banner-title;
+        color: $color-secoundary;
+        font-weight: 900 !important;
+        position: relative;
+        text-transform: uppercase;
+
+    }
+
+    &__text {
+        font-size: $regular-text;
+        margin: 20px 0;
+    }
+
+    &__btn {
+        margin: 20px 0 70px 0;
+    }
+
+}

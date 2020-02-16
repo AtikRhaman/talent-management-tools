@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Slush Talent management</title>
+  <link rel="stylesheet" href="./css/basic-settings.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+  <title>Slush Talent management</title>
+</head>
+
+<body>
+  <!-- UI -->
+  <div class="wrap">
+    <!-- Header section -->
+    <header>
+      <div class="banner-section">
+        <div class="container">
+          <div class="banner">
+            <h1 class="banner__logo">STM</h1>
+            <h1 class="banner__title">Slush Talent management</h1>
+            <div class="total-country">
+              <h2 class="result" id="number-of-countries"></h2>
+            </div>
+            <div class="search">
+              <div class="search__item">
+                <input type="text" id="input_country_name" placeholder="Search e.g. UX designer, Developer" />
+              </div>
+            </div>
+            <div class="form ">
+              <div class="form__item">
+                <div class="tab tab-active" id="sort-by-name">
+                  Sort by best matches
+                </div>
+              </div>
+              <div class=" form__item">
+                <div class="tab " id="sort-by-capital">
+                  Sort by experince
+                </div>
+              </div>
+              <div class=" form__item">
+                <div class="tab " id="sort-by-population">
+                  Sort by skills
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Applicant section -->
+    <section class="applicants-section">
+      <div class="container">
+        <h2 class="banner__title--subtitle">
+          <span class="banner__title--subtitle-brand">120 </span> applicants
+          Sorted by best matches
+        </h2>
+        <div class="applicants-container">
+          <div class="applicant">
+            <div class="applicant__item">
+              <div class="picture">
+                <img src="./img/atik.png" alt="">
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="name">
+                <div class="name__rank">
+                  <h2>1</h2>
+                </div>
+                <div class="name__person">
+                  <h3>Md Atikur Rahman</h3>
+                  <p>Interior designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="progress">
+                <div class="progress__text">
+                  <p>Overall matching</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress__bar">
+                  <div class="loading"></div>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item--skills">
+              <div class="skills-list">
+                <div class="skills-list__item">
+                  <p class="skills__name">Skills</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Experience</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Interest</p>
+                  <div class="loading-thin"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="applicant">
+            <div class="applicant__item">
+              <div class="picture">
+                <img src="./img/atik.png" alt="">
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="name">
+                <div class="name__rank">
+                  <h2>2</h2>
+                </div>
+                <div class="name__person">
+                  <h3>Applicant name</h3>
+                  <p>Interior designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="progress">
+                <div class="progress__text">
+                  <p>Overall matching</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress__bar">
+                  <div class="loading"></div>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item--skills">
+              <div class="skills-list">
+                <div class="skills-list__item">
+                  <p class="skills__name">Skills</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Experience</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Interest</p>
+                  <div class="loading-thin"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="applicant">
+            <div class="applicant__item">
+              <div class="picture">
+                <img src="./img/atik.png" alt="">
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="name">
+                <div class="name__rank">
+                  <h2>3</h2>
+                </div>
+                <div class="name__person">
+                  <h3>Applicant name</h3>
+                  <p>Interior designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="progress">
+                <div class="progress__text">
+                  <p>Overall matching</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress__bar">
+                  <div class="loading"></div>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item--skills">
+              <div class="skills-list">
+                <div class="skills-list__item">
+                  <p class="skills__name">Skills</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Experience</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Interest</p>
+                  <div class="loading-thin"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="applicant">
+            <div class="applicant__item">
+              <div class="picture">
+                <img src="./img/atik.png" alt="">
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="name">
+                <div class="name__rank">
+                  <h2>4</h2>
+                </div>
+                <div class="name__person">
+                  <h3>Applicant name</h3>
+                  <p>Interior designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="progress">
+                <div class="progress__text">
+                  <p>Overall matching</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress__bar">
+                  <div class="loading"></div>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item--skills">
+              <div class="skills-list">
+                <div class="skills-list__item">
+                  <p class="skills__name">Skills</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Experience</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Interest</p>
+                  <div class="loading-thin"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="applicant">
+            <div class="applicant__item">
+              <div class="picture">
+                <img src="./img/atik.png" alt="">
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="name">
+                <div class="name__rank">
+                  <h2>5</h2>
+                </div>
+                <div class="name__person">
+                  <h3>Applicant name</h3>
+                  <p>Interior designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="progress">
+                <div class="progress__text">
+                  <p>Overall matching</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress__bar">
+                  <div class="loading"></div>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item--skills">
+              <div class="skills-list">
+                <div class="skills-list__item">
+                  <p class="skills__name">Skills</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Experience</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Interest</p>
+                  <div class="loading-thin"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="applicant">
+            <div class="applicant__item">
+              <div class="picture">
+                <img src="./img/atik.png" alt="">
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="name">
+                <div class="name__rank">
+                  <h2>6</h2>
+                </div>
+                <div class="name__person">
+                  <h3>Applicant name</h3>
+                  <p>Interior designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="progress">
+                <div class="progress__text">
+                  <p>Overall matching</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress__bar">
+                  <div class="loading"></div>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item--skills">
+              <div class="skills-list">
+                <div class="skills-list__item">
+                  <p class="skills__name">Skills</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Experience</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Interest</p>
+                  <div class="loading-thin"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="applicant">
+            <div class="applicant__item">
+              <div class="picture">
+                <img src="./img/atik.png" alt="">
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="name">
+                <div class="name__rank">
+                  <h2>7</h2>
+                </div>
+                <div class="name__person">
+                  <h3>Applicant name</h3>
+                  <p>Interior designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="progress">
+                <div class="progress__text">
+                  <p>Overall matching</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress__bar">
+                  <div class="loading"></div>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item--skills">
+              <div class="skills-list">
+                <div class="skills-list__item">
+                  <p class="skills__name">Skills</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Experience</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Interest</p>
+                  <div class="loading-thin"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="applicant">
+            <div class="applicant__item">
+              <div class="picture">
+                <img src="./img/atik.png" alt="">
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="name">
+                <div class="name__rank">
+                  <h2>8</h2>
+                </div>
+                <div class="name__person">
+                  <h3>Applicant name</h3>
+                  <p>Interior designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item">
+              <div class="progress">
+                <div class="progress__text">
+                  <p>Overall matching</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress__bar">
+                  <div class="loading"></div>
+                </div>
+              </div>
+            </div>
+            <div class="applicant__item--skills">
+              <div class="skills-list">
+                <div class="skills-list__item">
+                  <p class="skills__name">Skills</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Experience</p>
+                  <div class="loading-thin"></div>
+                </div>
+                <div class="skills-list__item">
+                  <p class="skills__name">Interest</p>
+                  <div class="loading-thin"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer">
+        <div class="footer__logo">
+          <h1 class="banner__logo">STM</h1>
+        </div>
+        <div class="footer__para">
+          <p>Copyright 2020 by SLUSH</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/app-slush.js"></script>
+</body>
+
+</html>
