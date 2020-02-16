@@ -2,10 +2,12 @@
 // Slush telent management
 const applicantsContainer = document.querySelector(".applicants-container");
 const testLoop = document.querySelector(".test");
+const applicantCart = document.querySelector(".applicant")
 // tabs
-const sortByName = document.querySelector("#sort-by-name");
-const sortByCapital = document.querySelector("#sort-by-capital");
-const sortByPopulation = document.querySelector("#sort-by-population");
+const sortBymatches = document.querySelector("#sort-by-matches");
+const sortByExperince = document.querySelector("#sort-by-experince");
+const sortBySkills = document.querySelector("#sort-by-skills");
+const selectedForInterview = document.querySelector("#selected-for-interview");
 
 // const displayApllicants = () => {
 //   for (let i = 0; i < 10; i++) {
@@ -56,19 +58,36 @@ const sortByPopulation = document.querySelector("#sort-by-population");
 // }
 
 // add event lisner
-sortByName.addEventListener("click", function () {
-  sortByName.classList.add("tab-active");
-  sortByCapital.classList.remove("tab-active");
-  sortByPopulation.classList.remove("tab-active");
+
+//applicants
+applicantCart.addEventListener("click", function () {
+  window.location.href = "applicant-details.html"
+})
+// tabs
+sortBymatches.addEventListener("click", function () {
+  sortBymatches.classList.add("tab-active");
+  sortByExperince.classList.remove("tab-active");
+  sortBySkills.classList.remove("tab-active");
+  selectedForInterview.classList.remove("tab-active");
+
 });
-sortByCapital.addEventListener("click", function () {
-  sortByName.classList.remove("tab-active");
-  sortByCapital.classList.add("tab-active");
-  sortByPopulation.classList.remove("tab-active");
+sortByExperince.addEventListener("click", function () {
+  sortBymatches.classList.remove("tab-active");
+  sortByExperince.classList.add("tab-active");
+  sortBySkills.classList.remove("tab-active");
+  selectedForInterview.classList.remove("tab-active");
+
 });
 
-sortByPopulation.addEventListener("click", function () {
-  sortByName.classList.remove("tab-active");
-  sortByCapital.classList.remove("tab-active");
-  sortByPopulation.classList.add("tab-active");
+sortBySkills.addEventListener("click", function () {
+  sortBymatches.classList.remove("tab-active");
+  sortByExperince.classList.remove("tab-active");
+  sortBySkills.classList.add("tab-active");
+  selectedForInterview.classList.remove("tab-active");
+});
+selectedForInterview.addEventListener("click", function () {
+  sortBymatches.classList.remove("tab-active");
+  sortByExperince.classList.remove("tab-active");
+  sortBySkills.classList.remove("tab-active");
+  selectedForInterview.classList.add("tab-active");
 });

@@ -122,7 +122,6 @@ p {
 .skills-list {
   display: flex;
   flex-direction: column;
-  background: $color-light-grey;
 
   &__item {
     display: flex;
@@ -176,4 +175,66 @@ p {
   border-radius: 6px;
   top: 0;
   left: 0;
+}
+
+// applicant details
+
+.applicant-cv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 26px 0;
+  width: 86%;
+  background: $color-white;
+  border-radius: 8px;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.03);
+
+}
+
+.applicant-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: $color-white;
+  padding: 30px 120px;
+  align-items: center;
+
+  &__item {
+    width: 50%;
+  }
+}
+
+.applicant-info-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 120px;
+  background: $color-light-grey2;
+}
+
+.info-detaild {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    padding: 20px 0;
+
+    p {
+      line-height: 38px;
+    }
+  }
+}
+
+.picture-name {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+
+    img {
+      border-radius: 50%;
+    }
+  }
 }

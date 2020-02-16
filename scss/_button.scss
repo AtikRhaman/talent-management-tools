@@ -1,14 +1,19 @@
+.btn-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .button {
     padding: 14px 20px;
-    margin: 20px 0;
+    margin: 20px 10px;
     background: $color-brand;
     border: none;
     cursor: pointer;
     border-radius: 10px;
-    color: $color-brand;
+    color: $color-white;
     text-align: center;
     display: inline-block;
-
     transform: scale(1);
     transition: transform 0.35s ease-in-out;
 
@@ -17,19 +22,19 @@
         color: $color-brand;
         border: 1px solid $color-brand;
     }
+}
 
-    &--selected {
-        background: $color-brand;
-        color: $color-white;
-    }
+.button:hover {
+    transform: scale(1.030);
+    cursor: pointer;
 }
 
 .tab {
-    padding: 14px 20px;
-    margin: 20px 0;
+    padding: 14px 8px;
+    margin: 20px 0 0 0;
     background: $color-brand;
     border: none;
-    cursor: pointer;
+
     color: $color-white;
     text-align: center;
     display: inline-block;
@@ -40,8 +45,10 @@
 
 .tab:hover {
     transform: scale(1.030);
+    cursor: pointer;
 }
 
 .tab-active {
     border-bottom: 2px solid $color-white;
+    font-weight: bold;
 }
