@@ -6,25 +6,24 @@ p {
   color: $color-text;
 }
 
-// applicants
+// applicants css
 .applicants-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .applicant {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 26px 0;
-  width: 340px;
+  margin: 10px 0;
+  width: 320px;
   height: 540px;
   background: $color-white;
   border-radius: 8px;
   align-items: center;
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.03);
-
   transform: scale(1);
   transition: transform 0.35s ease-in-out;
   position: relative;
@@ -59,7 +58,6 @@ p {
 
 .applicant:hover {
   box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.07);
-
   transform: scale(1.02);
   cursor: pointer;
 }
@@ -74,7 +72,6 @@ p {
     width: 50%;
     border-radius: 50%;
   }
-
 }
 
 .name {
@@ -96,7 +93,6 @@ p {
 
   &__person {
     font-size: $regular-text;
-    margin: 0 0 0 14px;
   }
 }
 
@@ -177,13 +173,11 @@ p {
   left: 0;
 }
 
-// applicant details
-
+// applicant details page
 .applicant-cv {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 26px 0;
   width: 86%;
   background: $color-white;
   border-radius: 8px;
@@ -211,7 +205,7 @@ p {
   flex-direction: column;
   width: 100%;
   padding: 30px 120px;
-  background: $color-light-grey2;
+  background: $color-light-grey;
 }
 
 .info-detaild {
@@ -232,9 +226,9 @@ p {
   flex-direction: column;
 
   &__item {
-
     img {
       border-radius: 50%;
+      width: 155px;
     }
   }
 }

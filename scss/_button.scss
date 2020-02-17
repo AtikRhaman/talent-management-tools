@@ -1,7 +1,12 @@
 .btn-block {
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 86%;
+    border-radius: 8px;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .button {
@@ -21,6 +26,10 @@
         background: $color-white;
         color: $color-brand;
         border: 1px solid $color-brand;
+    }
+
+    a {
+        color: $color-brand;
     }
 }
 

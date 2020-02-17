@@ -3,8 +3,6 @@
 const applicantsContainer = document.querySelector(".applicants-container");
 
 applicantsContainer.innerHTML = "";
-
-applicantsContainer.innerHTML = "";
 let content;
 for (let i = 0; i < 10; i++) {
   let content = `<div class="applicant" onclick = "newpages()" >
@@ -54,7 +52,7 @@ for (let i = 0; i < 10; i++) {
   </div>`;
   applicantsContainer.innerHTML += content;
 }
-//applicants
+// for redirect to applicant details page
 function newpages() {
   window.location.href = "applicant-details.html";
 }

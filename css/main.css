@@ -12,9 +12,9 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .applicant {
@@ -28,8 +28,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 26px 0;
-  width: 340px;
+  margin: 10px 0;
+  width: 320px;
   height: 540px;
   background: #ffffff;
   border-radius: 8px;
@@ -115,7 +115,6 @@ p {
 }
 .name__person {
   font-size: 18px;
-  margin: 0 0 0 14px;
 }
 
 .progress {
@@ -220,7 +219,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 26px 0;
   width: 86%;
   background: #ffffff;
   border-radius: 8px;
@@ -258,7 +256,7 @@ p {
           flex-direction: column;
   width: 100%;
   padding: 30px 120px;
-  background: #eeeeee;
+  background: #F8F8F8;
 }
 
 .info-detaild {
@@ -288,6 +286,7 @@ p {
 }
 .picture-name__item img {
   border-radius: 50%;
+  width: 155px;
 }
 
 .banner-section {
@@ -331,7 +330,8 @@ p {
 .banner__title--subtitle {
   font-size: 24px;
   color: #333333;
-  margin: 30px 10px;
+  text-align: center;
+  margin: 10px 0 40px 0;
 }
 .banner__title--subtitle-brand {
   font-size: 24px;
@@ -348,26 +348,9 @@ p {
   padding: 0 15px;
   color: #ffffff;
 }
-.banner__title--bold {
-  font-size: 50px;
-  color: #1ABC9C;
-  font-weight: 900 !important;
-  position: relative;
-  text-transform: uppercase;
-}
-.banner__title--bold-sec {
-  font-size: 50px;
-  color: #2196f3;
-  font-weight: 900 !important;
-  position: relative;
-  text-transform: uppercase;
-}
 .banner__text {
   font-size: 18px;
   margin: 20px 0;
-}
-.banner__btn {
-  margin: 20px 0 70px 0;
 }
 
 .form-content {
@@ -476,6 +459,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 86%;
+  border-radius: 8px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .button {
@@ -501,6 +488,9 @@ p {
   background: #ffffff;
   color: #1ABC9C;
   border: 1px solid #1ABC9C;
+}
+.button a {
+  color: #1ABC9C;
 }
 
 .button:hover {

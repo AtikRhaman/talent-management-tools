@@ -17,7 +17,8 @@
         &--subtitle {
             font-size: $subheading-text;
             color: $color-text;
-            margin: 30px 10px;
+            text-align: center;
+            margin: 10px 0 40px 0;
         }
 
         &--subtitle-brand {
@@ -38,31 +39,9 @@
         color: $color-white;
     }
 
-    &__title--bold {
-        font-size: $banner-title;
-        color: $color-brand;
-        font-weight: 900 !important;
-        position: relative;
-        text-transform: uppercase;
-
-    }
-
-    &__title--bold-sec {
-        font-size: $banner-title;
-        color: $color-secoundary;
-        font-weight: 900 !important;
-        position: relative;
-        text-transform: uppercase;
-
-    }
-
     &__text {
         font-size: $regular-text;
         margin: 20px 0;
-    }
-
-    &__btn {
-        margin: 20px 0 70px 0;
     }
 
 }
