@@ -1,5 +1,5 @@
 # talent-management-tools
 
 
-## demo
+## Demo
 https://atikrhaman.github.io/talent-management-tools/
