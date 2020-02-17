@@ -4,7 +4,7 @@ const applicantsContainer = document.querySelector(".applicants-container");
 
 applicantsContainer.innerHTML = "";
 let content;
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 16; i++) {
   let content = `<div class="applicant" onclick = "newpages()" >
   <div class="applicant__item">
     <div class="picture">
